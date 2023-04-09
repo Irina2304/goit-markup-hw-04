@@ -11,6 +11,7 @@
     --hero-background:#2E2F42;
     --white-background:#FFFFFF;
     --modal-background:#FCFCFC;
+    --link-color: #afb1b8;
     --primary-font: Roboto, Ubuntu, sans-serif;
     --logo-font: Raleway, sans-serif;
 }
@@ -396,13 +397,14 @@ body {
     align-items: center;
     border: 1px solid var(--subtle-text);
     border-radius: 4px;
-    color: var(--subtle-text);
+    color: var(--link-color);
         
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
     border-color: var(--pressed-state);
+    color: #404bbf;
 }
 
 .customers-list-icon {
@@ -411,11 +413,6 @@ body {
     margin: 0 auto;
     display: block;
     fill: currentColor;
-}
-
-.customers-list-link:hover > .customers-list-icon,
-.customers-list-link:focus > .customers-list-icon {
-    color: #404bbf;
 }
 
 /*===/SECTION CUSTOMERS===*/
