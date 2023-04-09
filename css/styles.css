@@ -90,7 +90,7 @@ body {
 .headline-secondary {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
@@ -130,8 +130,6 @@ body {
 
 
 .social-list-icon {
-    width: 16px;
-    height: 16px;
     margin: 0 auto;
     display: block;
     fill: var(--light)
@@ -146,6 +144,7 @@ body {
     /*padding-top: 24px;
     padding-bottom: 24px;*/
     border-bottom: 1px solid var(--accent);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08)
 }
 
 .page-header-container {
@@ -223,6 +222,9 @@ body {
     margin-right: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero/people_office.jpg);
     background-size: cover;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-headline {
@@ -279,10 +281,13 @@ body {
 }
 
 .description-div-icon {
-    padding: 24px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--light);
     border-radius: 4px;
     margin-bottom: 8px;
+    padding: 24px 100px;
 }
 
 .description-icon {
@@ -346,7 +351,7 @@ body {
 }
 
 .one-of-team {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .headline-team {
@@ -378,8 +383,6 @@ body {
     padding-bottom: 120px;
 }
 
-
-
 .customers-list {
     display: flex;
     gap: 24px;
@@ -393,6 +396,7 @@ body {
     align-items: center;
     border: 1px solid var(--subtle-text);
     border-radius: 4px;
+    color: var(--subtle-text);
         
 }
 
@@ -406,12 +410,12 @@ body {
     height: 56px;
     margin: 0 auto;
     display: block;
-    fill: var(--subtle-text)
+    fill: currentColor;
 }
 
 .customers-list-link:hover > .customers-list-icon,
 .customers-list-link:focus > .customers-list-icon {
-    fill: var(--pressed-state);
+    color: #404bbf;
 }
 
 /*===/SECTION CUSTOMERS===*/
@@ -427,10 +431,8 @@ body {
 
 .container-footer{
     display: flex;
-}
-
-.logo-footer-container {
-    margin-right: 120px;
+    align-items: baseline;
+    gap: 120px
 }
 
 .footer-logo {
@@ -447,7 +449,7 @@ body {
     max-width: 264px;
 }
 
-.headline-secondary-footer {
+.footer-secondary-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
