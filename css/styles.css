@@ -112,6 +112,31 @@ body {
     letter-spacing: 0.02em;
 }
 
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-list-icon {
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+    display: block;
+    fill: var(--light)
+}
+
 /*===/COMPONENTS===*/
 
 
@@ -196,6 +221,8 @@ body {
     padding-bottom: 188px;
     margin-left: auto;
     margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero/people_office.jpg);
+    background-size: cover;
 }
 
 .main-headline {
@@ -249,6 +276,21 @@ body {
 
 .description-item {
     width: 264px;
+}
+
+.description-div-icon {
+    padding: 24px 100px;
+    background: var(--light);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.description-icon {
+    display: block;
+    width: 64px;
+    height: 64px;
+    
+
 }
 
 .head-description {
@@ -314,10 +356,65 @@ body {
 
 .team-text {
     text-align: center;
+    margin-bottom: 8px;
 }
+
+.social-list-team {
+    gap: 24px;
+}
+
+.social-list-team-link:hover,
+.social-list-team-link:focus {
+    background-color: var(--pressed-state);
+}
+
 
 /*===SECTION TEAM===*/
 
+/*===SECTION CUSTOMERS===*/
+
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+
+.customers-list-link {
+    width: 168px;
+    height: 88px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--subtle-text);
+    border-radius: 4px;
+        
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+    border-color: var(--pressed-state);
+}
+
+.customers-list-icon {
+    width: 104px;
+    height: 56px;
+    margin: 0 auto;
+    display: block;
+    fill: var(--subtle-text)
+}
+
+.customers-list-link:hover > .customers-list-icon,
+.customers-list-link:focus > .customers-list-icon {
+    fill: var(--pressed-state);
+}
+
+/*===/SECTION CUSTOMERS===*/
 
 /*===FOOTER===*/
 
@@ -328,6 +425,13 @@ body {
     padding-bottom: 100px;
 }
 
+.container-footer{
+    display: flex;
+}
+
+.logo-footer-container {
+    margin-right: 120px;
+}
 
 .footer-logo {
     display: inline-block;
@@ -341,6 +445,24 @@ body {
 .footer-text{
     color: var(--light);
     max-width: 264px;
+}
+
+.headline-secondary-footer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-background);
+    margin-bottom: 16px;
+}
+
+.social-list-footer {
+    gap: 16px;
+}
+
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+    background-color: var(--success);
 }
 
 /*===/FOOTER===*/
