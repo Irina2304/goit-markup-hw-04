@@ -11,7 +11,6 @@
     --hero-background:#2E2F42;
     --white-background:#FFFFFF;
     --modal-background:#FCFCFC;
-    --link-color: #afb1b8;
     --primary-font: Roboto, Ubuntu, sans-serif;
     --logo-font: Raleway, sans-serif;
 }
@@ -288,7 +287,7 @@ body {
     background: var(--light);
     border-radius: 4px;
     margin-bottom: 8px;
-    padding: 24px 100px;
+    height: 112px;
 }
 
 .description-icon {
@@ -393,17 +392,15 @@ body {
     width: 168px;
     height: 88px; 
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 1px solid var(--subtle-text);
+    border: 1px solid currentColor;
     border-radius: 4px;
-    color: var(--link-color);
+    color: var(--subtle-text);
         
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
-    border-color: var(--pressed-state);
     color: #404bbf;
 }
 
@@ -428,8 +425,10 @@ body {
 
 .container-footer{
     display: flex;
-    align-items: baseline;
-    gap: 120px
+}
+
+.logo-footer-container {
+    margin-right: 120px;
 }
 
 .footer-logo {
